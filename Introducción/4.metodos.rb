@@ -7,16 +7,16 @@ nombre = gets.chomp
 saludar(nombre)
 # Método para realizar una operación aritmética, seleccionada por el usuario.
 def resultado(num1, num2, operacion)
-  if operacion === "+"
+  if operacion == "+"
     operacion = "suma"
     resultado = num1 + num2
-  elsif operacion === "-"
+  elsif operacion == "-"
     operacion = "resta"
     resultado = num1 - num2
-  elsif operacion === "*"
+  elsif operacion == "*"
     operacion = "multiplicacion"
     resultado = num1 * num2
-  elsif operacion === "/"
+  elsif operacion == "/"
     operacion = "division"
     resultado = num1 / num2
   end
