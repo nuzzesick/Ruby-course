@@ -26,6 +26,7 @@ else
 end
 
 # ELIMINANDO ELEMENTOS
+
 puts "¡Bien! Ahora podrás eliminar elementos del arreglo..."
 # El método shift nos permite eliminar uno o más elementos desde atrás hacia adelante dentro del arreglo
 print "Ingresa la cantidad de elementos que quieres eliminar del arreglo, desde atrás hacia adelante (no más de 3): "
@@ -58,12 +59,23 @@ if numero > 0 && numero <=3
   end
 end
 puts "¡Listo, has finalizado!"
-puts "Arreglo final: #{numeros}"
 
-
+# El método drop devuelve una copia de un arreglo SIN MODIFICAR AL ORIGINAL, pasándole como parámetro la cantidad de elementos que queremos eliminar del arreglo original. En este caso voy utilizar 0 como parámetro para que me devuelva una copia exacta del arreglo 'numeros'.
+arreglo_final = numeros.drop(0)
+puts "Arreglo final: #{arreglo_final}"
+puts "Arreglo final 2: #{numeros}"
 # El método first devuelve el primer elemento de un arreglo
 puts "Primer elemento del arreglo: #{numeros.first}"
 # El método last devuelve el último elemento de un arreglo
 puts "Último elemento del arreglo: #{numeros.last}"
 # El método length devuelve la cantidad de elementos de un arreglo
 puts "Cantidad de elementos dentro del arreglo: #{numeros.length}"
+
+# También existe el método slice, que al igual que el método drop, nos devuelve una copia de un arreglo, sólo que: 
+#  - AFECTA AL ARREGLO ORIGINAL (aunque se cree una nueva variable)
+#  - Se pasan dos parámetros en vez de uno. El primer parámetro indica a partir de qué elemento se quiere obtener el arreglo, y el segundo indica hasta qué elemento se quiere obtener el arreglo.
+#  Ejemplos: 
+#  numeros.slice(0, numeros.length)
+#  Eso haría una devolución del arreglo entero
+#  numeros.slice(3,9)
+#  Eso haría una devolución del arreglo desde la posición 3 hasta la posición 9
