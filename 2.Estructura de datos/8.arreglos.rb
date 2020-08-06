@@ -17,7 +17,7 @@ puts "¡Has agregado el número '#{numero}' al final del arreglo correctamente!"
 puts "Así ha quedado el arreglo ahora: #{numeros}"
 puts "Si quieres, puedes ingresar un número y buscar un elemento: "
 buscar = Integer(gets.chomp)
-# El método fetch nos permite buscar y devolver un elemento en determinada posición dentro de un arreglo. El segundo parámetro cuál será el valor en caso de que no se encuentre ningún elemento
+# El método fetch nos permite buscar y devolver un elemento en determinada posición dentro de un arreglo. El segundo parámetro determina cuál será el valor en caso de que no se encuentre ningún elemento
 resultado = numeros.fetch(buscar, "No hay ningún número en esa posición")
 if resultado != "No hay ningún número en esa posición"
   puts "¡Genial! En la posición '#{buscar}' está el número '#{resultado}'"
