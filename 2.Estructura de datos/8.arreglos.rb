@@ -76,3 +76,5 @@ puts "Cantidad de elementos dentro del arreglo: #{numeros.length}"
 #  Eso haría una devolución del arreglo entero
 #  numeros.slice(3,9)
 #  Eso haría una devolución del arreglo desde la posición 3 hasta la posición 9
+
+# Tanto el método drop como el método slice, no afectan al arreglo original
